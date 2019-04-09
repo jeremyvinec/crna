@@ -1,6 +1,5 @@
-import React from 'react'
-import { View, TextInput, Button } from 'react-native'
-import { StyleSheet, View, TextInput, Button } from 'react-native'
+import React from 'react';
+import { StyleSheet, View, TextInput, Button, Text, FlatList } from 'react-native'
 
 class Search extends React.Component {
     render(){
@@ -8,9 +7,13 @@ class Search extends React.Component {
             // Ici on rend à l'écran les éléments graphiques de notre component custom Search
             <View style={{ marginTop: 20}}>
                 <TextInput
-                    style= {stlye.TextInput} 
+                    style= {styles.TextInput} 
                     placeholder='Titre du film'/>
                 <Button title='Recherche' onPress={() => {}}/>
+                <FlatList
+                    data={[{key: 'a'}, {key: 'b'}]}
+                    renderItem={({item}) => <Text>{item.key}</Text>}
+                />
             </View>
         )
     }
