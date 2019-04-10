@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     width: 120,
     height: 180,
     margin: 5,
-    backgroundColor: 'gray'
   },
   content_container: {
     flex: 1,
