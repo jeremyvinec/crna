@@ -17,11 +17,11 @@
     <session id="-1529614188">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -40,18 +40,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="crna" type="1abcf292:AndroidViewProjectNode" />
-              <item name="crna" type="e9137016:NonAndroidModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,7 +53,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="crna" type="1abcf292:AndroidViewProjectNode" />
+              <item name="crna" type="e9137016:NonAndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,7 +156,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="8" width="974" height="1047" extended-state="0" />
+    <frame x="218" y="8" width="974" height="1047" extended-state="1" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3369803" />
@@ -170,8 +170,8 @@
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.49671772" visible="true" weight="0.32968238" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50328225" side_tool="true" visible="true" weight="0.32968238" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.49562362" visible="true" weight="0.32968238" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50437635" side_tool="true" visible="true" weight="0.32968238" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />

@@ -3,34 +3,44 @@ import React from 'react'
 import { Animated, StyleSheet, View, Easing } from 'react-native'
 
 class Test extends React.Component {
-    
-  constructor(props) {
-    super(props)
-    this.state = {
-      topPosition: new Animated.Value(0)
-    }
-  }
 
-  componentDidMount() {
-      Animated.timing(
+    constructor(props) {
+      super(props)
+      this.state = {
+        topPosition: new Animated.Value(0),
+        leftPosition: new Animated.Value(0),
+      }
+    }
+  
+    componentDidMount() {
+      Animated.parallel([
+        Animated.spring(
           this.state.topPosition,
           {
-              toValue: 100,
-              duration: 3000,
-              easing: Easing.linear,
+            toValue: 100,
+            tension: 8,
+            friction: 3
           }
-      ).start()
-  }
+        ),
+        Animated.timing(
+          this.state.leftPosition,
+          {
+            toValue: 100,
+            duration: 1000,
+            easing: Easing.elastic(2)
+          }
+        )
+      ]).start()
+    }
   
-  render() {
-    return (
-      <View style={styles.main_container}>
-        <Animated.View style={[styles.animation_view, { top: this.state.topPosition }]}>
-        </Animated.View>
-      </View>
-    )
+    render() {
+      return (
+        <View style={styles.main_container}>
+          <Animated.View style={[styles.animation_view, { top: this.state.topPosition, left: this.state.leftPosition }]}></Animated.View>
+        </View>
+      )
+    }
   }
-}
 
 const styles = StyleSheet.create({
     main_container: {
